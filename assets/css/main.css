@@ -3014,6 +3014,23 @@ input, select, textarea {
     width: 220px;
     border-radius: 8px;
 }
+
+@media screen and (max-width: 736px) {
+    .bio-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .bio-text {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .bio-image img {
+        width: 160px;
+    }
+}
 #intro {
     padding: 0.5em 0;
 }
@@ -3142,6 +3159,24 @@ justify-content: center;
 .publication-text ul {
     margin-top: 0;
     margin-bottom: 1.2em;
+}
+
+@media screen and (max-width: 900px) {
+    .publication {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .publication-carousel {
+        width: 100%;
+        max-width: 400px;
+        flex: none;
+    }
+
+    .publication-text {
+        max-width: 100%;
+        text-align: center;
+    }
 }
 #explore {
     background: #F9F8F4;

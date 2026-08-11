@@ -2993,6 +2993,21 @@ input, select, textarea {
 	font-size: 3em;
 	text-transform: none;
     color: #000000;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 736px) {
+	#header h1 {
+		font-size: 1.6em;
+		letter-spacing: 0.05em;
+		white-space: normal;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header h1 {
+		font-size: 1.3em;
+	}
 }
 .bio-section {
     display: flex;
